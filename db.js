@@ -1,9 +1,11 @@
-import mongoose from 'mongoose'
+import mongoose from 'mongoose';
 
-const uri= "mongodb+srv://batya:wkccpay9qFB8rTY4@cluster0.axm9ulv.mongodb.net/"
+import dotenv from 'dotenv'
+dotenv.config()
+
 
  const connectDB = async ()=>{
-    await mongoose.connect(uri);
+    await mongoose.connect(process.env.URI);
 };
 
 mongoose.connection.on("connected",()=>{

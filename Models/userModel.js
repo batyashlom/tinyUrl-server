@@ -8,4 +8,4 @@ const UserModelSchema = mongoose.Schema({
     "links":Array,
 })
 
-export default mongoose.model('user', UserModelSchema)
+export default mongoose.model('users', UserModelSchema)

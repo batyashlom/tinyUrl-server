@@ -19,4 +19,4 @@ const LinksModelSchema = mongoose.Schema({
     ]
 })
 
-export default mongoose.model('Links',LinksModelSchema);
+export default mongoose.model('links',LinksModelSchema);
